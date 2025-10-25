@@ -1,5 +1,6 @@
 # Navigation
 nav:
+  home: "Home"
   machines: "Machines"
   why_adventa: "Why Adventa"
   request_quote: "Request a Quote"

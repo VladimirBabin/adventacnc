@@ -1,12 +1,14 @@
 ---
 layout: default
 ---
-{% comment %}
-Find the specific machine data from _data/machines.yml
-by matching the file's slug (e.g., "impera-fx-1325")
-{% endcomment %}
+{% comment %} Get the machine's slug from the file path {% endcomment %}
 {% assign machine_slug = page.path | split: '/' | last | remove: '.md' %}
-{% assign machine = site.data.machines | where: "slug", machine_slug | first %}
+
+{% comment %}
+Perform a direct, efficient lookup using the slug as the key
+in the _data/machines.yml hash map.
+{% endcomment %}
+{% assign machine = site.data.machines[machine_slug] %}
 
 <div class="machine-detail-section">
     <div class="container">

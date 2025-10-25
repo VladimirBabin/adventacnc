@@ -200,6 +200,33 @@ h1, h2, h3 {
     color: var(--color-primary);
 }
 
+/* --- Additions for Language Switcher --- */
+.main-nav .language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+    border-left: 1px solid #eee;
+    margin-left: 0.5rem;
+}
+
+.language-switcher .active-lang {
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+.language-switcher .inactive-lang {
+    font-weight: 600;
+    color: var(--color-text);
+    opacity: 0.7;
+    transition: var(--transition-speed);
+}
+
+.language-switcher .inactive-lang:hover {
+    opacity: 1;
+    color: var(--color-primary);
+}
+
 /* --- Hero Section --- */
 .hero-section {
     padding: 6rem 0;
@@ -653,4 +680,34 @@ h1, h2, h3 {
     .contact-wrapper {
         grid-template-columns: 1.5fr 1fr;
     }
+}
+
+*:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+*:focus:not(:focus-visible) {
+    outline: none;
+}
+
+*:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* Skip to main content link for screen readers */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--color-primary);
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    top: 0;
 }
