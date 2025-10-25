@@ -1,0 +1,42 @@
+title: Adventa Makina
+description: "Adventa delivers professional flatbed CNC router solutions engineered for furniture makers, interior builders, and manufacturers."
+baseurl: ""
+url: "https://adventacnc.com.tr"
+
+# Localization
+timezone: Europe/Istanbul
+lang: tr
+languages: ["tr", "en"]
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - DOCUMENTATION.md
+  - future-improvement-plans/
+  - .gitignore
+  - .git/
+  - vendor/bundle/
+  - vendor/cache/
+  - .bundle/
+  - .sass-cache/
+  - .jekyll-cache/
+  - node_modules/
+  - package.json
+  - package-lock.json
+
+# SEO Plugin (if using jekyll-seo-tag)
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Social links for SEO
+social:
+  name: Adventa Makina
+  links:
+    - https://www.instagram.com/adventacnc/

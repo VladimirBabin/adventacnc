@@ -1,0 +1,68 @@
+# Navigation
+nav:
+  home: "Home"
+  machines: "Machines"
+  why_adventa: "Why Adventa"
+  request_quote: "Request a Quote"
+
+# Hero Section
+hero:
+  headline: "Empowering Craft Through Precision and Efficiency"
+  subheading: "Adventa's Impera FX series is engineered to meet the demands of professional furniture makers, interior builders, and manufacturers of custom components. From custom cabinetry to intricate decorative elements, every piece is cut with precision — every time. Designed for those who care about the final look as much as the process, Impera FX combines clean finishes, dependable output, and the confidence to take on complex designs without compromise."
+  discover_button: "Discover Our Solutions"
+
+# Machines Section
+machines_section:
+  headline: "Impera FX Series – Engineered for Every Scale"
+  learn_more_button: "Learn More"
+  machine_alt_text: "The %s flatbed CNC router processing components with precision."
+  spec_labels:
+    tableSize: "Table Size"
+    spindle: "Spindle"
+    controller: "Controller"
+    vacuum: "Vacuum Pump"
+    toolChanger: "Tool Changer"
+
+# Why Adventa Section
+why_adventa_section:
+  headline: "The Adventa Advantage"
+  advantages:
+    - title: "Advanced Vacuum Technology"
+      description: "Low-noise, maintenance-free Busch claw-type vacuum pumps with up to 8 individually controllable zones and digital monitoring ensure reliable workholding throughout every machining process. Our precision-machined phenolic HPL tables offer excellent dimensional stability and long service life."
+    - title: "Precision Motion Control"
+      description: "High-quality PMI linear guides combined with precision ground racks and Syntec absolute value servo motors deliver smooth, rigid, and accurate motion with exceptional repeatability. Our advanced control system eliminates the need to return home on power-up, improving efficiency."
+    - title: "Complete Solution with Support"
+      description: "Every Impera FX includes Alphacam Core+Nesting CAM software, automatic tool height measurement, and centralized lubrication. We provide complete user training and 24/7 technical support whenever you need us, ensuring you maximize your investment from day one."
+
+# Contact Section
+contact_section:
+  headline: "Request a Consultation"
+  text: "Reach out today to discuss your specific manufacturing needs, get a custom quote, or schedule a demonstration with one of our specialists."
+  form:
+    name_label: "Name *"
+    name_placeholder: "John Smith"
+    email_label: "Email *"
+    email_placeholder: "john@company.com"
+    message_label: "Message *"
+    message_placeholder: "Tell us about your requirements..."
+    submit_button: "Send Message"
+  contact_info:
+    headline: "Contact Information"
+    email: "Email"
+    phone: "Phone"
+    address: "Address"
+    business_hours: "Business Hours"
+    business_hours_details: |-
+      Monday - Friday: 9:00 AM - 6:00 PM
+      Saturday: 10:00 AM - 2:00 PM
+
+# Footer
+footer:
+  copyright: "&copy; 2024 Adventa Makina. All Rights Reserved."
+  instagram: "Instagram"
+
+# Machine Page
+machine_page:
+  specs_headline: "Technical Specifications"
+  description_headline: "Detailed Description"
+  applications_headline: "Ideal Applications"

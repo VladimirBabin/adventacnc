@@ -1,0 +1,68 @@
+# Navigation
+nav:
+  home: "Ana Sayfa"
+  machines: "Makineler"
+  why_adventa: "Neden Adventa"
+  request_quote: "Teklif Alın"
+
+# Hero Section
+hero:
+  headline: "Hassasiyet ve Verimlilikle Zanaatı Güçlendiriyoruz"
+  subheading: "Adventa'nın Impera FX serisi, profesyonel mobilya üreticilerinin, iç mimarların ve özel bileşen üreticilerinin taleplerini karşılamak üzere tasarlanmıştır. Özel dolaplardan karmaşık dekoratif elemanlara kadar her parça, her seferinde hassasiyetle kesilir. Süreç kadar nihai görünüme de önem verenler için tasarlanan Impera FX, temiz yüzeyleri, güvenilir çıktıyı ve karmaşık tasarımları taviz vermeden üstlenme güvenini bir araya getirir."
+  discover_button: "Çözümlerimizi Keşfedin"
+
+# Machines Section
+machines_section:
+  headline: "Impera FX Serisi – Her Ölçek İçin Tasarlandı"
+  learn_more_button: "Daha Fazla Bilgi"
+  machine_alt_text: "%s düz yataklı CNC router bileşenleri hassasiyetle işliyor."
+  spec_labels:
+    tableSize: "Tabla Boyutu"
+    spindle: "Spindle"
+    controller: "Kontrolör"
+    vacuum: "Vakum Pompası"
+    toolChanger: "Takım Değiştirici"
+
+# Why Adventa Section
+why_adventa_section:
+  headline: "Adventa Avantajı"
+  advantages:
+    - title: "Gelişmiş Vakum Teknolojisi"
+      description: "8 adede kadar ayrı ayrı kontrol edilebilen bölgeye ve dijital izlemeye sahip, düşük gürültülü, bakım gerektirmeyen Busch pençe tipi vakum pompaları, her işleme süreci boyunca güvenilir iş parçası tutuşu sağlar. Hassas işlenmiş fenolik HPL tablalarımız, mükemmel boyutsal kararlılık ve uzun hizmet ömrü sunar."
+    - title: "Hassas Hareket Kontrolü"
+      description: "Yüksek kaliteli PMI lineer kılavuzlar, hassas taşlanmış kremayerler ve Syntec mutlak değerli servo motorlar ile birleşerek olağanüstü tekrarlanabilirlikle pürüzsüz, sağlam ve hassas hareket sağlar. Gelişmiş kontrol sistemimiz, açılışta sıfırlama ihtiyacını ortadan kaldırarak verimliliği artırır."
+    - title: "Destek ile Komple Çözüm"
+      description: "Her Impera FX, Alphacam Core+Nesting CAM yazılımı, otomatik takım boyu ölçümü ve merkezi yağlama içerir. Yatırımınızdan ilk günden itibaren en üst düzeyde yararlanmanızı sağlamak için eksiksiz kullanıcı eğitimi ve ihtiyacınız olduğunda 7/24 teknik destek sağlıyoruz."
+
+# Contact Section
+contact_section:
+  headline: "Danışmanlık Talep Edin"
+  text: "Özel üretim ihtiyaçlarınızı görüşmek, özel bir teklif almak veya uzmanlarımızdan biriyle bir gösterim planlamak için bugün bize ulaşın."
+  form:
+    name_label: "İsim *"
+    name_placeholder: "John Smith"
+    email_label: "E-posta *"
+    email_placeholder: "john@sirket.com"
+    message_label: "Mesaj *"
+    message_placeholder: "Gereksinimlerinizden bahsedin..."
+    submit_button: "Mesaj Gönder"
+  contact_info:
+    headline: "İletişim Bilgileri"
+    email: "E-posta"
+    phone: "Telefon"
+    address: "Adres"
+    business_hours: "Çalışma Saatleri"
+    business_hours_details: |-
+      Pazartesi - Cuma: 09:00 - 18:00
+      Cumartesi: 10:00 - 14:00
+
+# Footer
+footer:
+  copyright: "&copy; 2024 Adventa Makina. Tüm Hakları Saklıdır."
+  instagram: "Instagram"
+
+# Machine Page
+machine_page:
+  specs_headline: "Teknik Özellikler"
+  description_headline: "Detaylı Açıklama"
+  applications_headline: "İdeal Uygulamalar"

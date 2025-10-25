@@ -1,0 +1,116 @@
+---
+layout: default
+---
+<section id="hero" class="hero-section">
+    <div class="container text-center">
+        <h1 class="hero-headline">{{ site.data[page.lang].hero.headline }}</h1>
+        <p class="hero-subheading">{{ site.data[page.lang].hero.subheading }}</p>
+        <a href="#machines" class="btn btn-primary">{{ site.data[page.lang].hero.discover_button }}</a>
+    </div>
+</section>
+
+<section id="machines" class="machines-section">
+    <div class="container">
+        <h2 class="section-headline">{{ site.data[page.lang].machines_section.headline }}</h2>
+        <div class="machines-grid">
+            {% comment %}
+            Loop through the machines hash.
+            The 'machine' variable will be an array: [slug, machine_data_object]
+            {% endcomment %}
+            {% for machine_pair in site.data.machines %}
+            {% assign machine_slug = machine_pair[0] %}
+            {% assign machine = machine_pair[1] %}
+            <article class="machine-card">
+                <img src="/assets/images/{{ machine_slug }}.jpg"
+                     alt="{{ site.data[page.lang].machines_section.machine_alt_text | replace: '%s', machine.model }}"
+                     class="machine-image"
+                     width="400"
+                     height="250"
+                     loading="lazy">
+                <div class="card-content">
+                    <h3>{{ machine.model }}</h3>
+                    <ul class="spec-list">
+                        {% for spec in machine.specs %}
+                        <li><strong>{{ site.data[page.lang].machines_section.spec_labels[spec[0]] }}:</strong> {{ spec[1] }}</li>
+                        {% endfor %}
+                    </ul>
+                    <a href="/{{ page.lang }}/machines/{{ machine_slug }}/" class="btn btn-secondary">{{ site.data[page.lang].machines_section.learn_more_button }}</a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section id="why-adventa" class="why-adventa-section">
+    <div class="container">
+        <h2 class="section-headline">{{ site.data[page.lang].why_adventa_section.headline }}</h2>
+        <div class="advantage-grid">
+            {% for advantage in site.data[page.lang].why_adventa_section.advantages %}
+            <article class="advantage-card">
+                <h3>{{ advantage.title }}</h3>
+                <p>{{ advantage.description }}</p>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2 class="section-headline">{{ site.data[page.lang].contact_section.headline }}</h2>
+        <p class="contact-text text-center">{{ site.data[page.lang].contact_section.text }}</p>
+        <div class="contact-wrapper">
+            <form class="contact-form" action="https://formspree.io/f/xeopjnzq" method="POST">
+                <!-- Honeypot field (multiple techniques) -->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <label for="website">Website</label>
+                    <input type="text"
+                           id="website"
+                           name="_gotcha"
+                           tabindex="-1"
+                           autocomplete="off"
+                           placeholder="Your website URL">
+                </div>
+                <!-- Timestamp for speed checking -->
+                <input type="hidden" name="_timestamp" value="{{ 'now' | date: '%s' }}">
+                <!-- END: Honeypot field (multiple techniques) -->
+
+                <div class="form-group">
+                    <label for="name">{{ site.data[page.lang].contact_section.form.name_label }}</label>
+                    <input type="text" id="name" name="name" required placeholder="{{ site.data[page.lang].contact_section.form.name_placeholder }}">
+                </div>
+                <div class="form-group">
+                    <label for="email">{{ site.data[page.lang].contact_section.form.email_label }}</label>
+                    <input type="email" id="email" name="email" required placeholder="{{ site.data[page.lang].contact_section.form.email_placeholder }}">
+                </div>
+                <div class="form-group">
+                    <label for="message">{{ site.data[page.lang].contact_section.form.message_label }}</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="{{ site.data[page.lang].contact_section.form.message_placeholder }}"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit">{{ site.data[page.lang].contact_section.form.submit_button }}</button>
+            </form>
+            <div class="contact-info">
+                <h3>{{ site.data[page.lang].contact_info.headline }}</h3>
+                <address class="contact-details">
+                    <div class="contact-item">
+                        <strong>{{ site.data[page.lang].contact_info.email }}</strong>
+                        <a href="mailto:info@adventacnc.com">info@adventacnc.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>{{ site.data[page.lang].contact_info.phone }}</strong>
+                        <a href="tel:+905052739698">+90 (505) 273 96 98</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>{{ site.data[page.lang].contact_info.address }}</strong>
+                        <p>Hatip Mah. Sarisalkim 3.Sk No: 1<br>Corlu / Tekirdag<br>TURKIYE</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>{{ site.data[page.lang].contact_info.business_hours }}</strong>
+                        <p>{{ site.data[page.lang].contact_info.business_hours_details | newline_to_br }}</p>
+                    </div>
+                </address>
+            </div>
+        </div>
+    </div>
+</section>

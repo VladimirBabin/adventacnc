@@ -1,0 +1,49 @@
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Adventa",
+        "url": "{{ site.url }}",
+        "logo": "{{ site.url }}/assets/images/logo.png",
+        "description": "{{ site.description }}",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Hatip Mah. Sarisalkim 3.Sk No: 1",
+            "addressLocality": "Corlu",
+            "addressRegion": "Tekirdag",
+            "addressCountry": "TR"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+90-505-273-96-98",
+            "contactType": "sales",
+            "email": "info@adventacnc.com",
+            "availableLanguage": ["Turkish", "English"]
+        },
+        "sameAs": [
+            "https://www.instagram.com/adventacnc/"
+        ]
+    }
+</script>
+
+<!-- For machine pages -->
+{% if page.layout == 'machine' %}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "{{ machine.model }}",
+        "description": "{{ page.applications }}",
+        "image": "{{ site.url }}{{ page.image }}",
+        "brand": {
+            "@type": "Brand",
+            "name": "Adventa"
+        },
+        "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "priceCurrency": "TRY"
+        }
+    }
+</script>
+{% endif %}

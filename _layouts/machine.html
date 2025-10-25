@@ -1,0 +1,40 @@
+---
+layout: default
+---
+{% comment %} Get the machine's slug from the file path {% endcomment %}
+{% assign machine_slug = page.path | split: '/' | last | remove: '.md' %}
+
+{% comment %}
+Perform a direct, efficient lookup using the slug as the key
+in the _data/machines.yml hash map.
+{% endcomment %}
+{% assign machine = site.data.machines[machine_slug] %}
+
+<div class="machine-detail-section">
+    <div class="container">
+        <h1 class="section-headline">{{ machine.model }}</h1>
+        <div class="machine-detail-grid">
+            <div class="machine-image-container">
+                <img src="{{ page.image }}"
+                     alt="{{ site.data[page.lang].machines_section.machine_alt_text | replace: '%s', machine.model }}"
+                     class="machine-detail-image">
+            </div>
+            <div class="machine-specs">
+                <h2>{{ site.data[page.lang].machine_page.specs_headline }}</h2>
+                <ul>
+                    {% for spec in machine.specs %}
+                    <li><strong>{{ site.data[page.lang].machines_section.spec_labels[spec[0]] }}:</strong> {{ spec[1] }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="machine-description">
+            <h2>{{ site.data[page.lang].machine_page.description_headline }}</h2>
+            {{ content }}
+        </div>
+        <div class="machine-applications">
+            <h2>{{ site.data[page.lang].machine_page.applications_headline }}</h2>
+            <p>{{ page.applications }}</p>
+        </div>
+    </div>
+</div>

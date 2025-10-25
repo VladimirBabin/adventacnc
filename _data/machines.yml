@@ -1,0 +1,45 @@
+# Each machine is a key-value pair, with the slug as the key.
+impera-fx-1325:
+  model: "Impera FX 1325"
+  specs:
+    tableSize: "1300×2500 mm"
+    spindle: "9kW Spindle / 24,000 RPM"
+    controller: "Syntec FC60-WA Controller"
+    vacuum: "160 m³ Vacuum Pump"
+    toolChanger: "Linear 6 / Umbrella 12 Tool Changer"
+
+impera-fx-1631:
+  model: "Impera FX 1631"
+  specs:
+    tableSize: "1600×3100 mm"
+    spindle: "9kW Spindle / 24,000 RPM"
+    controller: "Syntec FC60-WA Controller"
+    vacuum: "200 m³ Vacuum Pump"
+    toolChanger: "Linear 8 / Umbrella 12 Tool Changer"
+
+impera-fx-1642:
+  model: "Impera FX 1642"
+  specs:
+    tableSize: "1600×4200 mm"
+    spindle: "9kW Spindle / 24,000 RPM"
+    controller: "Syntec FC60-WA Controller"
+    vacuum: "250 m³ Vacuum Pump"
+    toolChanger: "Linear up to 14 / Umbrella 16 Tool Changer"
+
+impera-fx-2137:
+  model: "Impera FX 2137"
+  specs:
+    tableSize: "2100×3700 mm"
+    spindle: "9kW Spindle / 24,000 RPM"
+    controller: "Syntec FC60-WA Controller"
+    vacuum: "250 m³ Vacuum Pump"
+    toolChanger: "Linear up to 14 / Umbrella 16 Tool Changer"
+
+impera-fx-2142:
+  model: "Impera FX 2142"
+  specs:
+    tableSize: "2100×4200 mm"
+    spindle: "9kW Spindle / 24,000 RPM"
+    controller: "Syntec FC60-WA Controller"
+    vacuum: "300 m³ Vacuum Pump"
+    toolChanger: "Linear up to 14 / Umbrella 16 Tool Changer"

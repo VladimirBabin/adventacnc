@@ -1,0 +1,54 @@
+# Jekyll-specific ignores
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby / Bundler ignores
+.bundle/
+vendor/bundle/
+.ruby-version
+.ruby-gemset
+
+# JetBrains IDE files (for .iml and vcs.xml)
+.idea/
+*.iml
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Mac OS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows specific files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# General build artifacts
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Environment variables (NEVER commit these)
+.env
+.env.local
+.env.*.local
+
+# Log files
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*~
