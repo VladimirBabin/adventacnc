@@ -24,9 +24,10 @@ This guide outlines the most important steps to improve your website's visibilit
 *   **Action:** Optimize your website's `<title>` tag and add a compelling `<meta name="description">`.
 *   **Why is that important:** These two elements are what a user sees in the Google search results. A great title and description are your "advertisement" on Google—they convince the user to click on your link instead of a competitor's. They are a direct factor in your click-through rate (CTR), which search engines use as a quality signal.
 *   **Steps to be done:**
-    1.  **Rewrite the `<title>` Tag:** Make it more specific. A great formula is `Primary Product/Keyword | Business Name`. Open `index.html` and change:
-        *   **From:** `<title>Adventa | Precision CNC Router Solutions</title>`
-        *   **To:** `<title>Impera FX Flatbed CNC Routers | Adventa Makina</title>`
+    1.  **Rewrite the `<title>` Tag:** Make it more specific. A great formula is `Primary Product/Keyword | Business Name`. Open `en/index.md` and `tr/index.md` and change the `title` in the front matter:
+        **From:** `title: "Adventa | Precision CNC Router Solutions"`
+        **To (en/index.md):** `title: "Impera FX Flatbed CNC Routers | Adventa Makina"`
+        **To (tr/index.md):** `title: "Impera FX Düz Yatak CNC Router | Adventa Makina"`
     2.  **Add a `<meta name="description">` Tag:** This tag goes inside the `<head>` section of `index.html`. It should be a concise summary (around 155 characters).
         *   **Add this line to your HTML:**
         ```html

@@ -13,7 +13,9 @@ by matching the file's slug (e.g., "impera-fx-1325")
         <h1 class="section-headline">{{ machine.model }}</h1>
         <div class="machine-detail-grid">
             <div class="machine-image-container">
-                <img src="{{ page.image }}" alt="{{ machine.model }}" class="machine-detail-image">
+                <img src="{{ page.image }}"
+                     alt="{{ site.data[page.lang].machines_section.machine_alt_text | replace: '%s', machine.model }}"
+                     class="machine-detail-image">
             </div>
             <div class="machine-specs">
                 <h2>{{ site.data[page.lang].machine_page.specs_headline }}</h2>
