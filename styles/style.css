@@ -1,5 +1,5 @@
 /*
-  Quantum Machining Systems
+  Adventa CNC Solutions
   styles/style.css
 */
 
@@ -8,11 +8,11 @@
 
 /* --- CSS Custom Properties (Variables) --- */
 :root {
-    --color-primary: #00FFFF; /* Electric Cyan */
-    --color-dark: #333333;      /* Charcoal Gray */
-    --color-text: #1A202C;      /* Softer Charcoal for Body */
+    --color-primary: #E74C3C; /* Adventa Red/Orange */
+    --color-dark: #2C3E50;      /* Deep Blue-Gray */
+    --color-text: #34495E;      /* Slate Gray for Body */
     --color-bg: #FFFFFF;        /* Clean White */
-    --color-bg-alt: #F4F6F8;   /* Off-white for section contrast */
+    --color-bg-alt: #ECF0F1;   /* Light Gray for section contrast */
     --color-white: #FFFFFF;
 
     --font-primary: 'Montserrat', sans-serif;
@@ -63,7 +63,7 @@ a {
 }
 
 a:hover {
-    color: #00cccc; /* Darker cyan */
+    color: #C0392B; /* Darker red */
 }
 
 h1, h2, h3 {
@@ -118,12 +118,12 @@ h1, h2, h3 {
 
 .btn-primary {
     background-color: var(--color-primary);
-    color: var(--color-dark);
+    color: var(--color-white);
     font-weight: 700;
 }
 
 .btn-primary:hover {
-    background-color: #00cccc;
+    background-color: #C0392B;
     transform: translateY(-2px);
     box-shadow: var(--shadow-medium);
 }
@@ -143,13 +143,14 @@ h1, h2, h3 {
 .btn-nav {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
-    background-color: var(--color-dark);
-    color: var(--color-primary);
+    background-color: var(--color-primary);
+    color: var(--color-white);
 }
 
 .btn-nav:hover {
-    background-color: var(--color-text);
+    background-color: #C0392B;
     color: var(--color-white);
+    transform: translateY(-1px);
 }
 
 /* --- Header & Navigation --- */
@@ -255,13 +256,14 @@ h1, h2, h3 {
     width: 100%;
     height: 250px;
     object-fit: cover;
+    background: linear-gradient(135deg, #ECF0F1 0%, #BDC3C7 100%);
 }
 
 .card-content {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Makes card content fill space */
+    flex-grow: 1;
 }
 
 .card-content h3 {
@@ -272,7 +274,7 @@ h1, h2, h3 {
 .spec-list {
     list-style: none;
     margin-bottom: 1.5rem;
-    flex-grow: 1; /* Pushes button to bottom */
+    flex-grow: 1;
 }
 
 .spec-list li {
@@ -289,8 +291,8 @@ h1, h2, h3 {
     font-weight: bold;
 }
 
-/* --- Why Quantum Section --- */
-.why-quantum-section {
+/* --- Why Adventa Section --- */
+.why-adventa-section {
     padding: 5rem 0;
     background-color: var(--color-bg-alt);
 }
@@ -369,17 +371,11 @@ h1, h2, h3 {
     }
 
     .main-nav ul {
-        gap: 1.5rem; /* Increase spacing */
+        gap: 1.5rem;
     }
 
     .machines-grid {
         grid-template-columns: 1fr 1fr;
-    }
-    /* Handles the 3rd item in a 2-column grid */
-    .machines-grid .machine-card:last-child {
-        grid-column: 1 / -1; /* Span full width */
-        max-width: 50%;
-        margin: 0 auto;
     }
 
     .advantage-grid {
@@ -396,18 +392,12 @@ h1, h2, h3 {
 /* Desktop Styles */
 @media (min-width: 1024px) {
     .main-nav {
-        display: block; /* Ensure nav is visible */
+        display: block;
     }
     .main-nav ul {
         gap: 2rem;
     }
     .machines-grid {
         grid-template-columns: repeat(3, 1fr);
-    }
-    /* Unset the tablet-specific rule for the last card */
-    .machines-grid .machine-card:last-child {
-        grid-column: auto;
-        max-width: 100%;
-        margin: 0;
     }
 }
