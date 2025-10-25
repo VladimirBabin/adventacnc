@@ -322,6 +322,10 @@ h1, h2, h3 {
     margin: 0 auto 2rem auto;
 }
 
+.contact-details {
+    font-style: normal;
+}
+
 .contact-details p {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
@@ -356,7 +360,6 @@ h1, h2, h3 {
 .social-links a:hover {
     color: var(--color-primary);
 }
-
 
 /* --- Responsive Design (Mobile-First) --- */
 
@@ -394,9 +397,11 @@ h1, h2, h3 {
     .main-nav {
         display: block;
     }
+
     .main-nav ul {
         gap: 2rem;
     }
+
     .machines-grid {
         grid-template-columns: repeat(3, 1fr);
     }
