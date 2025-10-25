@@ -1,140 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adventa | Precision CNC Router Solutions</title>
-    <meta name="description" content="Adventa delivers professional flatbed CNC router solutions engineered for furniture makers, interior builders, and manufacturers. Achieve accurate, consistent, and high-quality results with the Impera FX series.">
+  <meta charset="UTF-8">
+  <title>Adventa CNC Solutions</title>
+  <script type="text/javascript">
+    const userLang = navigator.language || navigator.userLanguage;
+    const savedLang = localStorage.getItem('user_language');
 
-    <!-- Google Fonts: Montserrat -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles/style.css">
+    if (savedLang) {
+      window.location.replace('/' + savedLang + '/');
+    } else {
+      if (userLang.startsWith('tr')) {
+        window.location.replace('/tr/');
+      } else {
+        window.location.replace('/en/');
+      }
+    }
+  </script>
 </head>
 <body>
-
-<header class="main-header">
-    <div class="container header-container">
-        <a href="#" class="logo" aria-label="Adventa Home">
-            Adventa
-        </a>
-        <nav class="main-nav" aria-label="Main Navigation">
-            <ul>
-                <li><a href="#machines">Machines</a></li>
-                <li><a href="#why-adventa">Why Adventa</a></li>
-                <li><a href="#contact" class="btn btn-nav">Request a Quote</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<main>
-    <section id="hero" class="hero-section">
-        <div class="container text-center">
-            <h1 class="hero-headline">Empowering Craft Through Precision and Efficiency</h1>
-            <p class="hero-subheading">
-                Adventa's Impera FX series is engineered to meet the demands of professional furniture makers, interior builders, and manufacturers of custom components. From custom cabinetry to intricate decorative elements, every piece is cut with precision — every time. Designed for those who care about the final look as much as the process, Impera FX combines clean finishes, dependable output, and the confidence to take on complex designs without compromise.
-            </p>
-            <a href="#machines" class="btn btn-primary">Discover Our Solutions</a>
-        </div>
-    </section>
-
-    <section id="machines" class="machines-section">
-        <div class="container">
-            <h2 class="section-headline">Impera FX Series – Engineered for Every Scale</h2>
-            <div class="machines-grid" id="machinesGrid"></div>
-        </div>
-    </section>
-
-    <section id="why-adventa" class="why-adventa-section">
-        <div class="container">
-            <h2 class="section-headline">The Adventa Advantage</h2>
-            <div class="advantage-grid">
-                <article class="advantage-card">
-                    <h3>Advanced Vacuum Technology</h3>
-                    <p>Low-noise, maintenance-free Busch claw-type vacuum pumps with up to 8 individually controllable zones and digital monitoring ensure reliable workholding throughout every machining process. Our precision-machined phenolic HPL tables offer excellent dimensional stability and long service life.</p>
-                </article>
-                <article class="advantage-card">
-                    <h3>Precision Motion Control</h3>
-                    <p>High-quality PMI linear guides combined with precision ground racks and Syntec absolute value servo motors deliver smooth, rigid, and accurate motion with exceptional repeatability. Our advanced control system eliminates the need to return home on power-up, improving efficiency.</p>
-                </article>
-                <article class="advantage-card">
-                    <h3>Complete Solution with Support</h3>
-                    <p>Every Impera FX includes Alphacam Core+Nesting CAM software, automatic tool height measurement, and centralized lubrication. We provide complete user training and 24/7 technical support whenever you need us, ensuring you maximize your investment from day one.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="section-headline">Request a Consultation</h2>
-            <p class="contact-text text-center">
-                Reach out today to discuss your specific manufacturing needs, get a custom quote, or schedule a demonstration with one of our specialists.
-            </p>
-
-            <div class="contact-wrapper">
-                <form class="contact-form" action="https://formspree.io/f/xeopjnzq" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name *</label>
-                        <input type="text" id="name" name="name" required placeholder="John Smith">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" required placeholder="john@company.com">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message *</label>
-                        <textarea id="message" name="message" rows="6" required placeholder="Tell us about your requirements..."></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
-                </form>
-
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <address class="contact-details">
-                        <div class="contact-item">
-                            <strong>Email</strong>
-                            <a href="mailto:info@adventacnc.com">info@adventacnc.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <strong>Phone</strong>
-                            <a href="tel:+905052739698">+90 (505) 273 96 98</a>
-                        </div>
-                        <div class="contact-item">
-                            <strong>Address</strong>
-                            <p>Hatip Mah. Sarisalkim 3.Sk No: 1<br>Corlu / Tekirdag<br>TURKIYE</p>
-                        </div>
-                        <div class="contact-item">
-                            <strong>Business Hours</strong>
-                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 2:00 PM</p>
-                        </div>
-                    </address>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-
-<footer class="main-footer">
-    <div class="container footer-container">
-        <p>&copy; 2024 Adventa Makina. All Rights Reserved.</p>
-        <nav aria-label="Social Media Links">
-            <ul class="social-links">
-<!--                <li><a href="" target="_blank" rel="noopener">LinkedIn</a></li>-->
-                <li><a href="https://www.instagram.com/adventacnc/" target="_blank" rel="noopener">Instagram</a></li>
-            </ul>
-        </nav>
-    </div>
-</footer>
-
-<script src="js/machines.js"></script>
-
 </body>
 </html>
