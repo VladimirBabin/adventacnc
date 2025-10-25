@@ -19,13 +19,12 @@
 <header class="main-header">
     <div class="container header-container">
         <a href="#" class="logo" aria-label="Adventa Home">
-            Adventa <span>FX</span>
+            Adventa
         </a>
         <nav class="main-nav" aria-label="Main Navigation">
             <ul>
                 <li><a href="#machines">Machines</a></li>
                 <li><a href="#why-adventa">Why Adventa</a></li>
-                <li><a href="#support">Support</a></li>
                 <li><a href="#contact" class="btn btn-nav">Request a Quote</a></li>
             </ul>
         </nav>
@@ -71,20 +70,56 @@
     </section>
 
     <section id="contact" class="contact-section">
-        <div class="container text-center">
+        <div class="container">
             <h2 class="section-headline">Request a Consultation</h2>
-            <p class="contact-text">
+            <p class="contact-text text-center">
                 Reach out today to discuss your specific manufacturing needs, get a custom quote, or schedule a demonstration with one of our specialists.
             </p>
-            <address class="contact-details">
-                <p>Email: <a href="mailto:info@adventacnc.com">info@adventacnc.com</a></p>
-                <p>Phone: <a href="tel:+905052739698">+90 (505) 273 96 98</a></p>
-                <p>Address: Hatip Mah. Sarisalkim 3.Sk No: 1, Corlu / Tekirdag, TURKIYE</p>
-            </address>
+
+            <div class="contact-wrapper">
+                <form class="contact-form" action="https://formspree.io/f/xeopjnzq" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="John Smith">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="john@company.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Tell us about your requirements..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                </form>
+
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <address class="contact-details">
+                        <div class="contact-item">
+                            <strong>Email</strong>
+                            <a href="mailto:info@adventacnc.com">info@adventacnc.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Phone</strong>
+                            <a href="tel:+905052739698">+90 (505) 273 96 98</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Address</strong>
+                            <p>Hatip Mah. Sarisalkim 3.Sk No: 1<br>Corlu / Tekirdag<br>TURKIYE</p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Business Hours</strong>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 2:00 PM</p>
+                        </div>
+                    </address>
+                </div>
+            </div>
         </div>
     </section>
-
-    <div id="support"></div>
 </main>
 
 <footer class="main-footer">

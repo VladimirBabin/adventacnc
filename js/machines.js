@@ -3,7 +3,7 @@
  * This file contains the machine data and dynamically generates the machine cards
  */
 
-// Machine data - single source of truth
+// Machines data
 const machines = [
     {
         model: "Impera FX 1325",
