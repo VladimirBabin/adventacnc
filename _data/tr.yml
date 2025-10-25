@@ -14,6 +14,13 @@ hero:
 machines_section:
   headline: "Impera FX Serisi – Her Ölçek İçin Tasarlandı"
   learn_more_button: "Daha Fazla Bilgi"
+  machine_alt_text: "%s düz yataklı CNC router bileşenleri hassasiyetle işliyor."
+  spec_labels:
+    tableSize: "Tabla Boyutu"
+    spindle: "Spindle"
+    controller: "Kontrolör"
+    vacuum: "Vakum Pompası"
+    toolChanger: "Takım Değiştirici"
 
 # Why Adventa Section
 why_adventa_section:

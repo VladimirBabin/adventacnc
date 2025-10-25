@@ -1,12 +1,12 @@
 ---
 layout: default
 ---
-<div class="machine-detail-section" style="padding: 5rem 0;">
+<div class="machine-detail-section">
     <div class="container">
         <h1 class="section-headline">{{ page.title }}</h1>
-        <div class="machine-detail-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+        <div class="machine-detail-grid">
             <div class="machine-image-container">
-                <img src="{{ page.image }}" alt="{{ page.title }}" style="width: 100%; border-radius: 8px; box-shadow: 0 8px 30px rgba(0,0,0,0.1);">
+                <img src="{{ page.image }}" alt="{{ page.title }}" class="machine-detail-image">
             </div>
             <div class="machine-specs">
                 <h2>{{ site.data[page.lang].machine_page.specs_headline }}</h2>
@@ -17,11 +17,11 @@ layout: default
                 </ul>
             </div>
         </div>
-        <div class="machine-description" style="margin-top: 3rem;">
+        <div class="machine-description">
             <h2>{{ site.data[page.lang].machine_page.description_headline }}</h2>
             {{ content }}
         </div>
-        <div class="machine-applications" style="margin-top: 3rem;">
+        <div class="machine-applications">
             <h2>{{ site.data[page.lang].machine_page.applications_headline }}</h2>
             <p>{{ page.applications }}</p>
         </div>

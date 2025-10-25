@@ -14,6 +14,13 @@ hero:
 machines_section:
   headline: "Impera FX Series – Engineered for Every Scale"
   learn_more_button: "Learn More"
+  machine_alt_text: "The %s flatbed CNC router processing components with precision."
+  spec_labels:
+    tableSize: "Table Size"
+    spindle: "Spindle"
+    controller: "Controller"
+    vacuum: "Vacuum Pump"
+    toolChanger: "Tool Changer"
 
 # Why Adventa Section
 why_adventa_section:

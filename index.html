@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
   <title>Adventa CNC Solutions</title>
+  <meta http-equiv="refresh" content="0; url=/tr/">
+  <link rel="canonical" href="/tr/" />
   <script type="text/javascript">
     const userLang = navigator.language || navigator.userLanguage;
     const savedLang = localStorage.getItem('user_language');
+    let targetLang = 'tr'; // Default to Turkish
 
     if (savedLang) {
-      window.location.replace('/' + savedLang + '/');
-    } else {
-      if (userLang.startsWith('tr')) {
-        window.location.replace('/tr/');
-      } else {
-        window.location.replace('/en/');
-      }
+      targetLang = savedLang;
+    } else if (!userLang.startsWith('tr')) {
+      targetLang = 'en';
     }
+    window.location.replace('/' + targetLang + '/');
   </script>
 </head>
 <body>
+  <p>If you are not redirected automatically, follow this <a href='/tr/'>link to the Turkish site</a> or this <a href='/en/'>link to the English site</a>.</p>
 </body>
 </html>
