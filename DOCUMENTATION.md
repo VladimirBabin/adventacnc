@@ -77,16 +77,15 @@ This section is for making common content updates.
     -   `en/machines/{your-slug}.md`
     -   `tr/machines/{your-slug}.md`
 4.  **Fill Content Files:** Add the following front matter and description to each file (translating the `applications` text and description for the Turkish version):
-    ---
-    layout: machine
-    lang: en
-    image: "/assets/images/{your-slug}.jpg"
-    applications: "A short, one-sentence description of the ideal use case."
-    ---
-    A full paragraph describing the new machine in detail.
-    ```
-5.  Save all files. The new machine will automatically appear on the homepage and have its own detail pages.
+   ---
+   layout: machine
+   lang: en
+   image: "/assets/images/{your-slug}.jpg"
+   applications: "A short, one-sentence description of the ideal use case."
+   ---
+   A full paragraph describing the new machine in detail.
+
+5. **Save all files:** The new machine will automatically appear on the homepage and have its own detail pages.
 
 ---
-
 For instructions on how to set up and run the project locally, please see the **[README.md](./README.md)** file.
