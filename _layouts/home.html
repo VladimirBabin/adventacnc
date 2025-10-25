@@ -26,7 +26,7 @@ layout: default
                         <li><strong>{{ site.data[page.lang].machines_section.spec_labels[spec[0]] }}:</strong> {{ spec[1] }}</li>
                         {% endfor %}
                     </ul>
-                    <a href="/{{ page.lang }}/machines/{{ machine.slug }}.html" class="btn btn-secondary">{{ site.data[page.lang].machines_section.learn_more_button }}</a>
+                    <a href="{{ '/' | relative_url }}{{ page.lang }}/machines/{{ machine.slug }}.html" class="btn btn-secondary">{{ site.data[page.lang].machines_section.learn_more_button }}</a>
                 </div>
             </article>
             {% endfor %}
