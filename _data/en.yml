@@ -14,6 +14,7 @@ hero:
 # Machines Section
 machines_section:
   headline: "Impera FX Series – Engineered for Every Scale"
+  subheadline: "Professional flatbed CNC routers designed for precision, reliability, and productivity in demanding manufacturing environments."
   learn_more_button: "Learn More"
   machine_alt_text: "The %s flatbed CNC router processing components with precision."
   spec_labels:
@@ -26,6 +27,7 @@ machines_section:
 # Why Adventa Section
 why_adventa_section:
   headline: "The Adventa Advantage"
+  subheadline: "Built on decades of manufacturing excellence, our machines deliver the performance and reliability that serious manufacturers demand."
   advantages:
     - title: "Advanced Vacuum Technology"
       description: "Low-noise, maintenance-free Busch claw-type vacuum pumps with up to 8 individually controllable zones and digital monitoring ensure reliable workholding throughout every machining process. Our precision-machined phenolic HPL tables offer excellent dimensional stability and long service life."
@@ -39,22 +41,24 @@ contact_section:
   headline: "Request a Consultation"
   text: "Reach out today to discuss your specific manufacturing needs, get a custom quote, or schedule a demonstration with one of our specialists."
   form:
-    name_label: "Name *"
+    name_label: "Name"
     name_placeholder: "John Smith"
-    email_label: "Email *"
+    email_label: "Email"
     email_placeholder: "john@company.com"
-    message_label: "Message *"
+    message_label: "Message"
     message_placeholder: "Tell us about your requirements..."
     submit_button: "Send Message"
-  contact_info:
-    headline: "Contact Information"
-    email: "Email"
-    phone: "Phone"
-    address: "Address"
-    business_hours: "Business Hours"
-    business_hours_details: |-
-      Monday - Friday: 9:00 AM - 6:00 PM
-      Saturday: 10:00 AM - 2:00 PM
+
+# Contact Info
+contact_info:
+  headline: "Contact Information"
+  email: "Email"
+  phone: "Phone"
+  address: "Address"
+  business_hours: "Business Hours"
+  business_hours_details: |-
+    Monday - Friday: 9:00 AM - 6:00 PM
+    Saturday: 10:00 AM - 2:00 PM
 
 # Footer
 footer:

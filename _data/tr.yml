@@ -14,6 +14,7 @@ hero:
 # Machines Section
 machines_section:
   headline: "Impera FX Serisi – Her Ölçek İçin Tasarlandı"
+  subheadline: "Zorlu üretim ortamlarında hassasiyet, güvenilirlik ve üretkenlik için tasarlanmış profesyonel düz yataklı CNC router'lar."
   learn_more_button: "Daha Fazla Bilgi"
   machine_alt_text: "%s düz yataklı CNC router bileşenleri hassasiyetle işliyor."
   spec_labels:
@@ -26,6 +27,7 @@ machines_section:
 # Why Adventa Section
 why_adventa_section:
   headline: "Adventa Avantajı"
+  subheadline: "Onlarca yıllık üretim mükemmeliyeti üzerine inşa edilmiş makinelerimiz, ciddi üreticilerin talep ettiği performans ve güvenilirliği sunar."
   advantages:
     - title: "Gelişmiş Vakum Teknolojisi"
       description: "8 adede kadar ayrı ayrı kontrol edilebilen bölgeye ve dijital izlemeye sahip, düşük gürültülü, bakım gerektirmeyen Busch pençe tipi vakum pompaları, her işleme süreci boyunca güvenilir iş parçası tutuşu sağlar. Hassas işlenmiş fenolik HPL tablalarımız, mükemmel boyutsal kararlılık ve uzun hizmet ömrü sunar."
@@ -39,22 +41,24 @@ contact_section:
   headline: "Danışmanlık Talep Edin"
   text: "Özel üretim ihtiyaçlarınızı görüşmek, özel bir teklif almak veya uzmanlarımızdan biriyle bir gösterim planlamak için bugün bize ulaşın."
   form:
-    name_label: "İsim *"
+    name_label: "İsim"
     name_placeholder: "John Smith"
-    email_label: "E-posta *"
+    email_label: "E-posta"
     email_placeholder: "john@sirket.com"
-    message_label: "Mesaj *"
+    message_label: "Mesaj"
     message_placeholder: "Gereksinimlerinizden bahsedin..."
     submit_button: "Mesaj Gönder"
-  contact_info:
-    headline: "İletişim Bilgileri"
-    email: "E-posta"
-    phone: "Telefon"
-    address: "Adres"
-    business_hours: "Çalışma Saatleri"
-    business_hours_details: |-
-      Pazartesi - Cuma: 09:00 - 18:00
-      Cumartesi: 10:00 - 14:00
+
+# Contact Info
+contact_info:
+  headline: "İletişim Bilgileri"
+  email: "E-posta"
+  phone: "Telefon"
+  address: "Adres"
+  business_hours: "Çalışma Saatleri"
+  business_hours_details: |-
+    Pazartesi - Cuma: 09:00 - 18:00
+    Cumartesi: 10:00 - 14:00
 
 # Footer
 footer:
