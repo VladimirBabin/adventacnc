@@ -5,18 +5,18 @@ layout: default
     <div class="container text-center">
         <h1 class="hero-headline">{{ site.data[page.lang].hero.headline }}</h1>
         <p class="hero-subheading">{{ site.data[page.lang].hero.subheading }}</p>
-        <a href="#machines" class="btn btn-primary">{{ site.data[page.lang].hero.discover_button }}</a>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+            <a href="#machines" class="btn btn-primary">{{ site.data[page.lang].hero.discover_button }}</a>
+            <a href="#contact" class="btn btn-outline">{{ site.data[page.lang].nav.request_quote }}</a>
+        </div>
     </div>
 </section>
 
 <section id="machines" class="machines-section">
     <div class="container">
         <h2 class="section-headline">{{ site.data[page.lang].machines_section.headline }}</h2>
+        <p class="section-subheadline">{{ site.data[page.lang].machines_section.subheadline }}</p>
         <div class="machines-grid">
-            {% comment %}
-            Loop through the machines hash.
-            The 'machine' variable will be an array: [slug, machine_data_object]
-            {% endcomment %}
             {% for machine_pair in site.data.machines %}
             {% assign machine_slug = machine_pair[0] %}
             {% assign machine = machine_pair[1] %}
@@ -25,13 +25,16 @@ layout: default
                      alt="{{ site.data[page.lang].machines_section.machine_alt_text | replace: '%s', machine.model }}"
                      class="machine-image"
                      width="400"
-                     height="250"
+                     height="280"
                      loading="lazy">
                 <div class="card-content">
                     <h3>{{ machine.model }}</h3>
                     <ul class="spec-list">
                         {% for spec in machine.specs %}
-                        <li><strong>{{ site.data[page.lang].machines_section.spec_labels[spec[0]] }}:</strong> {{ spec[1] }}</li>
+                        <li>
+                            <strong>{{ site.data[page.lang].machines_section.spec_labels[spec[0]] }}</strong>
+                            <span>{{ spec[1] }}</span>
+                        </li>
                         {% endfor %}
                     </ul>
                     <a href="/{{ page.lang }}/machines/{{ machine_slug }}/" class="btn btn-secondary">{{ site.data[page.lang].machines_section.learn_more_button }}</a>
@@ -45,6 +48,7 @@ layout: default
 <section id="why-adventa" class="why-adventa-section">
     <div class="container">
         <h2 class="section-headline">{{ site.data[page.lang].why_adventa_section.headline }}</h2>
+        <p class="section-subheadline">{{ site.data[page.lang].why_adventa_section.subheadline }}</p>
         <div class="advantage-grid">
             {% for advantage in site.data[page.lang].why_adventa_section.advantages %}
             <article class="advantage-card">
@@ -62,7 +66,6 @@ layout: default
         <p class="contact-text text-center">{{ site.data[page.lang].contact_section.text }}</p>
         <div class="contact-wrapper">
             <form class="contact-form" action="https://formspree.io/f/xeopjnzq" method="POST">
-                <!-- Honeypot field (multiple techniques) -->
                 <div style="position: absolute; left: -5000px;" aria-hidden="true">
                     <label for="website">Website</label>
                     <input type="text"
@@ -72,9 +75,7 @@ layout: default
                            autocomplete="off"
                            placeholder="Your website URL">
                 </div>
-                <!-- Timestamp for speed checking -->
                 <input type="hidden" name="_timestamp" value="{{ 'now' | date: '%s' }}">
-                <!-- END: Honeypot field (multiple techniques) -->
 
                 <div class="form-group">
                     <label for="name">{{ site.data[page.lang].contact_section.form.name_label }}</label>

@@ -3,7 +3,7 @@
         <a href="{{ '/' | relative_url }}{{ page.lang }}/"
            class="logo"
            aria-label="{{ site.data[page.lang].nav.home | default: 'Adventa Home' }}">
-            Adventa
+            <strong>ADVENTA</strong>
         </a>
         <nav class="main-nav" aria-label="Main Navigation">
             <ul>
@@ -14,7 +14,6 @@
                     {% if lang == page.lang %}
                     <span class="active-lang">{{ lang | upcase }}</span>
                     {% else %}
-                    {% comment %} Build the URL for the other language version of the current page {% endcomment %}
                     {% assign lang_prefix = page.lang | prepend: '/' %}
                     {% assign base_url = page.url | remove_first: lang_prefix %}
                     {% assign new_url = base_url | prepend: lang | prepend: '/' | relative_url %}
@@ -27,3 +26,23 @@
         </nav>
     </div>
 </header>
+
+<script>
+    // Add scroll effect to header
+    (function() {
+        const header = document.querySelector('.main-header');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', function() {
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+
+            lastScroll = currentScroll;
+        });
+    })();
+</script>
